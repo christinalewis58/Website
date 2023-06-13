@@ -1,3 +1,13 @@
+//Responsive Navigation
+function myFunction() {
+  var x = document.getElementById("myNavigation");
+  if (x.className === "navigation") {
+    x.className += "responsive";
+  } else {
+    x.className = "navigation";
+  }
+}
+
 // Identify the button and paragraph tags with IDs for reference later
 const randomButton = document.getElementById("randomButton");
 const number = document.getElementById("result");

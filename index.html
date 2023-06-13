@@ -3,18 +3,45 @@
     <head>
         <meta charset="UTF-8">
         <title>Proof of Concept</title>
+
+        <!--Hamburger Menu Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <!--CSS-->
+        <link rel="stylesheet" href="style.css"/>
+
     </head>
 
-    <header>
-
-    </header>
+    <header class="header">
+        <a href="" class="logo">Crochet A Day</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="watch.html">What to Watch</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </header>
 
     <body>
+        <div class="numberGenerator">
         <h1>Testing Random Number Generator</h1>
         <p>Click button to test</p>
         <button id="randomButton">Generate Number</button>
         <p id="numberResult"></p>
 
+        </div>
+        <div class="sidebar">
+          <div>
+            <h2>What to Watch</h2>
+            <p>Lorem Ipsum</p>
+          </div>
+
+          <div>
+            <h2>Blog</h2>
+            <p>Lorem Ipsum</p>
+          </div>
+        </div>
         <script src="index.js"></script> 
+   
     </body>
 </html>
