@@ -2,18 +2,74 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 
+/* Typography */
+h1 {
+  font-family: "cubano", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #4d4d4d;
+}
+
+h2 {
+  font-family: "cubano", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #4d4d4d;
+}
+
+p {
+  font-family: "jaf-bernina-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #4d4d4d;
+}
+
+/* Logo Font*/
+header a {
+  font-family: "cubano", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fa9f2a;
+}
+
+/*Body Styling*/
 body {
     font-family: Helvetica, sans-serif;
     background-color: #f4f4f4;
   }
   
   a {
-    color: #000;
+    color: #4d4d4d;
   }
+
+/* Buttons */
+
+button#randomButton {
+  font-family: "jaf-bernina-sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #f4f4f4;
+  background-color: #fa9f2a;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+button#colorButton {
+  font-family: "jaf-bernina-sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #f4f4f4;
+  background-color: #fa9f2a;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
   
-  /* header */
+/* header */
   
   .header {
     background-color: #fff;
@@ -21,6 +77,12 @@ body {
     position: fixed;
     width: 100%;
     z-index: 3;
+  }
+
+  .header h1 {
+    color: #fa9f2a;
+    padding-top: 30px;
+    font-size: 1.5em;
   }
   
   .header ul {
@@ -36,6 +98,7 @@ body {
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4;
     text-decoration: none;
+    color: #666666;
   }
   
   .header li a:hover,
@@ -46,17 +109,21 @@ body {
   .header .logo {
     display: block;
     float: left;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 10px 20px;
     text-decoration: none;
+    margin: 0 auto;
   }
+
   
+
   /* menu */
   
   .header .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
+  
   }
   
   /* menu icon */
@@ -128,40 +195,119 @@ body {
   /* Number Generator Styling */
 
   .numberGenerator {
-      padding-top: 100px;
+      padding-top: 200px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+
   }
+
+  .numberGenerator h1, .numberGenerator p{
+    padding: 0 0 50px;
+  }
+
+  #numberResult {
+    font-family: "cubano", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 75px;
+  }
+
+
  /* Color palette styling */
 
  #palette-container {
    display: flex;
+   padding-left: 20px;
  }
 
   .color-box {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     margin: 5px;
-    border: 1px solid black;
+    border: none;
+    border-radius: 10px;
   }
-  /* What to Watch Styling */
+  /* Color Palette Maker Styling */
 
   .color {
-    padding-top: 100px;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+
+
   }
 
-  /* What to Watch Styling */
+  .color h1, .color p{
+    padding: 0 0 50px;
+  }
+
+
+
+  /* Blog Styling */
 
   .blog {
-    padding-top: 100px;
+    padding-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+
   }
-  
-  /* 48em = 768px */
+
+  .blog h1 {
+
+      padding: 0 0 50px;
+    }
+
+  .blog h2, .blog p {
+    padding-top: 10px;
+
+  }
+
+
+/* Sidebar for mobile */
+
+.sidebar {
+  padding: 20px;
+
+}
+
+.sidebar div {
+  padding-top: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+/* footer styling */
+
+footer.footer {
+  height: 100px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fbbdde;
+  margin-bottom: 0px
+  position: fixed;
+
+
+}
+
+.footer p a, .footer p {
+text-decoration: none;
+color: #f4f4f4;
+}
+  /* Tablet 48em = 768px */
   
   @media (min-width: 48em) {
+
+  /* Header styling */
+
     .header li {
       float: left;
     }
     .header li a {
-      padding: 20px 30px;
+      padding: 15px 25px;
     }
     .header .menu {
       clear: none;
@@ -171,7 +317,30 @@ body {
     .header .menu-icon {
       display: none;
     }
-        /* Sidebar styling */
+
+  /* Number Generator styling */
+
+
+  .numberGenerator {
+    padding-top: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+
+.numberGenerator h1, .numberGenerator p{
+  padding: 0 0 50px;
+}
+
+#numberResult {
+  font-family: "cubano", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 75px;
+}
+
+  /* Sidebar styling */
 
     .sidebar {
       height: 100%;
@@ -186,11 +355,12 @@ body {
     }
 
     .sidebar div {
-      padding-top: 100px;
+      padding-top: 130px;
       padding-left: 20px;
+      padding-right: 20px;
     }
 
   }
-  
-  
+
+
   
