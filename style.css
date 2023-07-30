@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-
+  overflow-x: hidden;
 }
 
 /* Typography */
@@ -20,6 +20,14 @@ h2 {
   color: #4d4d4d;
 }
 
+h3 {
+  font-family: "jaf-bernina-sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #4d4d4d;
+
+}
+
 p {
   font-family: "jaf-bernina-sans", sans-serif;
   font-weight: 400;
@@ -28,6 +36,7 @@ p {
 }
 
 /* Logo Font*/
+
 header a {
   font-family: "cubano", sans-serif;
   font-weight: 400;
@@ -36,12 +45,14 @@ header a {
 }
 
 /*Body Styling*/
+
 body {
     font-family: Helvetica, sans-serif;
     background-color: #f4f4f4;
+
   }
   
-  a {
+a {
     color: #4d4d4d;
   }
 
@@ -53,10 +64,11 @@ button#randomButton {
   font-style: normal;
   color: #f4f4f4;
   background-color: #fa9f2a;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 15px;
+  border-radius: 20px;
   border: none;
 }
+
 
 button#colorButton {
   font-family: "jaf-bernina-sans", sans-serif;
@@ -64,67 +76,77 @@ button#colorButton {
   font-style: normal;
   color: #f4f4f4;
   background-color: #fa9f2a;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 15px;
+  border-radius: 20px;
   border: none;
+}
+
+button#randomButton:hover, 
+button#colorButton:hover {
+  color: #fa9f2a;
+  background-color: white;
+  border-style: solid;
+  border-color: #fa9f2a;
+  border-width: 5px;
+  border-radius: 20px;
+  padding: 10px;
 }
   
 /* header */
   
-  .header {
-    background-color: #fff;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-  }
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
 
-  .header h1 {
-    color: #fa9f2a;
-    padding-top: 30px;
-    font-size: 1.5em;
-  }
+.header h1 {
+  color: #fa9f2a;
+  padding-top: 30px;
+  font-size: 1.5em;
+}
   
-  .header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: #fff;
-  }
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
   
-  .header li a {
-    display: block;
-    padding: 20px 20px;
-    border-right: 1px solid #f4f4f4;
-    text-decoration: none;
-    color: #666666;
-  }
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+  color: #666666;
+}
   
-  .header li a:hover,
-  .header .menu-btn:hover {
-    background-color: #f4f4f4;
-  }
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
   
-  .header .logo {
-    display: block;
-    float: left;
-    font-size: 1.5em;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 0 auto;
-  }
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 0 auto;
+}
 
   
 
-  /* menu */
+/* menu */
   
-  .header .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-  
-  }
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out; 
+}
   
   /* menu icon */
   
@@ -143,7 +165,7 @@ button#colorButton {
     height: 2px;
     position: relative;
     transition: background .2s ease-out;
-    width: 18px;
+    width: 15px;
   }
   
   .header .menu-icon .navicon:before,
@@ -195,11 +217,9 @@ button#colorButton {
   /* Number Generator Styling */
 
   .numberGenerator {
-      padding-top: 200px;
+      padding-top: 170px;
       padding-left: 20px;
       padding-right: 20px;
-
-
   }
 
   .numberGenerator h1, .numberGenerator p{
@@ -213,12 +233,17 @@ button#colorButton {
     font-size: 75px;
   }
 
+.granny img {
+  max-width: 100%;
 
- /* Color palette styling */
+}
+
+/* Color palette styling */
 
  #palette-container {
    display: flex;
    padding-left: 20px;
+   padding-bottom: 20px;
  }
 
   .color-box {
@@ -228,7 +253,7 @@ button#colorButton {
     border: none;
     border-radius: 10px;
   }
-  /* Color Palette Maker Styling */
+/* Color Palette Maker Styling */
 
   .color {
     padding-top: 150px;
@@ -243,27 +268,37 @@ button#colorButton {
     padding: 0 0 50px;
   }
 
-
+  .yarn img {
+    max-width: 100%;
+    margin-top: 100px;
+  }
 
   /* Blog Styling */
 
   .blog {
-    padding-top: 150px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 100px;
     padding-bottom: 100px;
 
   }
 
-  .blog h1 {
+  .blog img {
+    padding: 0 0 0 20px;
+  }
 
-      padding: 0 0 50px;
-    }
+  .blog h1 {
+      padding: 60px 0px 20px 20px;
+      color: #fa9f2a;
+  }
+
+  .blog h2 {
+    color: #e6affc;
+  }
 
   .blog h2, .blog p {
-    padding-top: 10px;
-
+    padding-top: 20px;
+    padding-left: 20px;
   }
+
 
 
 /* Sidebar for mobile */
@@ -280,6 +315,7 @@ button#colorButton {
 .sidebar a {
   text-decoration: none;
 }
+
 /* footer styling */
 
 footer.footer {
@@ -288,18 +324,45 @@ footer.footer {
   padding: 20px;
   background-color: #fbbdde;
   margin-bottom: 0px
-  position: fixed;
-
-
 }
 
 .footer p a, .footer p {
 text-decoration: none;
 color: #f4f4f4;
 }
+
+.footer {
+  bottom: 0px;
+  width: 100%;
+
+  }
+
   /* Tablet 48em = 768px */
   
   @media (min-width: 48em) {
+
+  /* Font styling */
+
+  .header h1 {
+    padding-top: 15px;
+    font-size: 3em;
+  }
+  h1 {
+  font-size: 2.5em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1.3em;
+  }
+
+  .header a {
+    font-size: 1.3em;
+  }
 
   /* Header styling */
 
@@ -321,30 +384,64 @@ color: #f4f4f4;
   /* Number Generator styling */
 
 
-  .numberGenerator {
-    padding-top: 200px;
-    padding-left: 20px;
-    padding-right: 20px;
+  .numberGenerator, .blog, .color {
+    max-width: 58%;
+
+  }
+
+  .numberGenerator h1, .numberGenerator p{
+    padding: 0 0 50px;
+  }
+
+  #numberResult {
+    font-family: "cubano", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 75px;
+  }
+
+  div.granny {
+    padding: 20px;
+
+  }
+  .granny img{
+    width: 58%;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #e6affc;
+    border-width: 10px;
+  }
+
+  .center {
+  margin: 0 auto;
+  max-width: 90%;
+  overflow-x: hidden;
+
+  }
+
+  /* Color Generator styling */
+
+ #palette-container {
+
+  padding-left: 20px;
+  padding-bottom: 20px;
+  }
+
+ .color-box {
+   width: 75px;
+   height: 75px;
+   margin: 5px;
+   border: none;
+   border-radius: 20px;
+  }
 
 
-}
-
-.numberGenerator h1, .numberGenerator p{
-  padding: 0 0 50px;
-}
-
-#numberResult {
-  font-family: "cubano", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 75px;
-}
 
   /* Sidebar styling */
 
     .sidebar {
       height: 100%;
-      width: 250px;
+      width: 30%;
       position: fixed;
       z-index: 1;
       top: 0;
@@ -353,14 +450,16 @@ color: #f4f4f4;
       overflow-x: hidden;
       padding-top: 20px;
     }
-
-    .sidebar div {
-      padding-top: 130px;
-      padding-left: 20px;
-      padding-right: 20px;
+    .sidebar h2 {
+     padding: 150px 0px 20px 20px;
     }
 
+    .sidebar p {
+      padding: 10px 0px 0px 20px;
+    }
+
+    .sidebar h3 {
+      padding: 10px 0px 0px 20px;
+    }
   }
-
-
   
