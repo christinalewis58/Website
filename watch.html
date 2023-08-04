@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Crochet A Day</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crochet A Day</title>
 
-        <!--Hamburger Menu Icons-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <!--CSS-->
-        <link rel="stylesheet" href="style.css"/>
-        <script src="index.js" type="module" defer></script>
-        <link rel="stylesheet" href="https://use.typekit.net/usl3tvq.css">
-        
+    <!--Hamburger Menu Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" type="module" defer></script>
+    <link rel="stylesheet" href="https://use.typekit.net/usl3tvq.css" />
+  </head>
 
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="images/CAD-Logo.png" alt="Crochet a Day logo" width="100" />
+    </a>
+    <h1>Crochet A Day</h1>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn">
+      <span class="navicon"></span>
+    </label>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="watch.html">Color Palette Maker</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </header>
 
-
-
-    </head>
-
-    <header class="header">
-      <a href="index.html" class="logo"> <img src="images/CAD-Logo.png" alt="Crochet a Day logo" width="100"></a>
-      <h1>Crochet A Day</h1>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="watch.html">Color Palette Maker</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </header>
-
-    <body>
-
-      <div class="center">
+  <body>
+    <main class="center">
       <div class="color">
+        <h1>Color Palette Maker</h1>
+        <p>
+          Click the button to make a random color palette for blankets, granny
+          squares, or any other crochet project.
+        </p>
+        <button id="colorButton">MAKE A PALETTE</button>
+        <p id="palette"></p>
+      </div>
+      <div id="palette-container"></div>
 
-      <h1>Color Palette Maker</h1>
-      <p>Click the button to make a random color 
-        palette for blankets, granny squares, or any other crochet project.</p>
-      <button id="colorButton">MAKE A PALETTE</button>
-      <p id="palette"></p>
-    </div> 
-    <div id="palette-container"></div>
-
-    <div class="granny">
-      <img src="images/yarn-circle.jpeg" alt="yarn circle" width="800">
-    </div>
-</div>
-<!-- 
+      <div class="granny">
+        <img src="images/yarn-circle.jpeg" alt="yarn circle" width="800" />
+      </div>
+    </main>
+    <!-- 
           <h1>What to Watch</h1>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, tempora necessitatibus aspernatur officiis fuga qui! Error inventore temporibus mollitia, harum, illo nam ab culpa dolores esse quo, natus sapiente ipsam.</p>
           <button>Show Me</button>
@@ -56,30 +59,30 @@
 
         -->
 
+    <div class="sidebar">
+      <h2>Looking for something else?</h2>
+      <p>Check out our other crochet resources.</p>
+      <div>
+        <h3><a href="index.html">Row count Generator</a></h3>
+        <p>
+          Use the row count generator to determine the number of rows to
+          complete.
+        </p>
+      </div>
 
-        <div class="sidebar">
-
-          <h2>Looking for something else?</h2>
-          <p>Check out our other crochet resources.</p>
-          <div>
-            <h3><a href="index.html">Row count Generator</h3>
-            <p>Use the row count 
-              generator to determine the number of rows to complete.</p>
-          </div>
-
-          <div>
-            <h3><a href="blog.html">Crochet Corner</h3>
-            <p>Get the latest crochet tips and tricks from our crafty experts.</p>
-          </div>
-        </div>
-        <!--<script src="index.js"></script> -->
-        <footer class="footer">
-      
-          <p><a href="watch.html">Color Generator</p><br>
-          <p><a href="index.html">Number Generator</p><br>
-          <p><a href="blog.html">Blog</p><br>
-
-
-        </footer>
-    </body>
+      <div>
+        <h3><a href="blog.html">Crochet Corner</a></h3>
+        <p>Get the latest crochet tips and tricks from our crafty experts.</p>
+      </div>
+    </div>
+    <!--<script src="index.js"></script> -->
+    <footer class="footer">
+      <p><a href="watch.html">Color Generator</a></p>
+      <br />
+      <p><a href="index.html">Number Generator</a></p>
+      <br />
+      <p><a href="blog.html">Blog</a></p>
+      <br />
+    </footer>
+  </body>
 </html>

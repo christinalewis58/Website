@@ -49,8 +49,15 @@ header a {
 body {
     font-family: Helvetica, sans-serif;
     background-color: #f4f4f4;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
 
-  }
+body > main {
+  flex-grow: 1;
+}
+
   
 a {
     color: #4d4d4d;
@@ -319,7 +326,7 @@ button#colorButton:hover {
 /* footer styling */
 
 footer.footer {
-  height: 100px;
+
   width: 100%;
   padding: 20px;
   background-color: #fbbdde;

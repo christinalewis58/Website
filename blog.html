@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Crochet A Day</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--Hamburger Menu Icons-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <!--CSS-->
-        <link rel="stylesheet" href="style.css"/>
-        <link rel="stylesheet" href="https://use.typekit.net/usl3tvq.css">
-       
+    <title>Crochet A Day</title>
 
+    <!--Hamburger Menu Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/usl3tvq.css" />
+  </head>
 
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="images/CAD-Logo.png" alt="Crochet a Day logo" width="100"
+    /></a>
+    <h1>Crochet A Day</h1>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"
+      ><span class="navicon"></span
+    ></label>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="watch.html">Color Palette Maker</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </header>
 
+  <body>
+    <main class="blog">
+      <h1>Crochet Corner</h1>
+      <img src="images/Hook-brandmark.png" alt="crochet hook" width="200px" />
+    </main>
 
+    <div class="sidebar">
+      <h2>Looking for something else?</h2>
+      <p>Check out our other crochet resources.</p>
 
-    </head>
+      <div>
+        <h3><a href="watch.html">Color Palette Maker</a></h3>
+        <p>Find the right color palette for your next project.</p>
+      </div>
 
-    <header class="header">
-      <a href="index.html" class="logo"> <img src="images/CAD-Logo.png" alt="Crochet a Day logo" width="100"></a>
-      <h1>Crochet A Day</h1>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="watch.html">Color Palette Maker</a></li>
-          <li><a href="blog.html">Blog</a></li>
-        </ul>
-      </header>
+      <div>
+        <h3><a href="index.html">Row Count Generator</a></h3>
+        <p>
+          Use the row count generator to determine the number of rows to
+          complete.
+        </p>
+      </div>
+    </div>
+    <script src="blog.js" type="module"></script>
 
-    <body>
-        <div class="blog">
-          <h1>Crochet Corner</h1>
-          <img src="images/Hook-brandmark.png" alt="crochet hook" width="200px">
-
-        </div>
-
-        <div class="sidebar">
-
-          <h2>Looking for something else?</h2>
-          <p>Check out our other crochet resources.</p>
-          
-          <div>
-            <h3><a href="watch.html">Color Palette Maker</h3>
-            <p>Find the right color palette for your next project.</p>
-          </div>
-
-          <div>
-            <h3><a href="index.html">Row Count Generator</h3>
-            <p>Use the row count 
-              generator to determine the number of rows to complete. </p>
-          </div>
-        </div>
-        <script src="blog.js" type="module"></script> 
-
-        <footer class="footer">
-      
-          <p><a href="watch.html">Color Generator</p><br>
-          <p><a href="index.html">Number Generator</p><br>
-          <p><a href="blog.html">Blog</p><br>
-
-
-        </footer>
-    </body>
+    <footer class="footer">
+      <p><a href="watch.html">Color Generator</a></p>
+      <br />
+      <p><a href="index.html">Number Generator</a></p>
+      <br />
+      <p><a href="blog.html">Blog</a></p>
+      <br />
+    </footer>
+  </body>
 </html>
