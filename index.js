@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   //create the function that fires when you click the button - function had the fetch request in it.
   function generateColor() {
-    var url = "http://colormind.io/api/";
+    var url = "https://colormind.io/api/";
     var data = {
       model: "default",
       input: [generateRandomRGB(), generateRandomRGB(), "N", "N", "N"],

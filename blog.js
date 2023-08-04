@@ -1,6 +1,6 @@
 //Fetch blog posts from mockable.io
 
-const response = await fetch("http://demo3933962.mockable.io/posts", { method: "GET" });
+const response = await fetch("https://demo3933962.mockable.io/posts", { method: "GET" });
 const posts = await response.json()
 console.log(posts)
 
