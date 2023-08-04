@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   //create the function that fires when you click the button - function had the fetch request in it.
   function generateColor() {
-    var url = "https://colormind.io/api/";
+    var url = "http://colormind.io/api/";
     var data = {
       model: "default",
       input: [generateRandomRGB(), generateRandomRGB(), "N", "N", "N"],
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // const posts = await response.json()
 // console.log(posts)
 
-// //Show blog post content 
+// //Show blog post content
 // posts.forEach((post)=>{
 //   document.querySelector(".blog").innerHTML += `
 //   <article>
@@ -113,4 +113,3 @@ document.addEventListener("DOMContentLoaded", function () {
 //   <p>${post.msg}</p>
 //   </article>`
 // })
-
