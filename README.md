@@ -1,5 +1,7 @@
 Crochet A Day
 
+Site URL: https://christinalewis58.github.io/Website/
+
 Crocheters often have trouble completing big projects. The dedication and time required to make blankets, sweaters, and other lengthy items can be overwhelming without a system to practice daily.
 
 Crochet A Day gives crocheters accountability and structure to help them feel less overwhelmed when starting big projects. The application allows the user to click a button to generate a random number of rows  from 1 to 15. The user will complete the specified number of rows the generator tells them to. 
